@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap" rel="stylesheet">
+    <title>Hola, amigue.</title>
+</head>
+
+<body class="centro">
+
+    <header>
+        <img src="https://i.pinimg.com/originals/7e/3d/85/7e3d85108c28a52299f1731213ae0d4f.png" alt="hola, amigue">
+        <h1>Hola, amigue.</h1>
+    </header>
+
+    <main class="mainindex">
+
+        <section id="preguntas" class="centro">
+
+            <article id="respuesta1">
+                <h2>Me preocupo por tí.</h2>
+
+                <p>
+                    Estamos pasando tiempos difíciles, lo sé. Por eso estoy aquí, para escucharte.
+                </p>
+
+                <button id="button">¿Quién sos?</button>
+            </article>
+
+            <article id="respuesta2" class="remove">
+                <p>
+                    Soy un robot hechicero que te trae un regalo: un consejo, el que necesitas ahora mismo.
+                </p>
+                <button id="button2">¿Qué tengo que hacer?</button>
+
+            </article>
+
+            <article id="respuesta3" class="remove">
+                <p>
+                    A cada segundo mi misterioso poder tecnológico me adelanta infinitas posibilidades.<br> Por lo que
+                    debes ayudarme a precisar ciertas
+                    informaciones para que yo pueda darte el resultado que realmente precisas.
+                </p>
+                <button id="button3">De acuerdo...</button>
+            </article>
+
+        </section>
+
+        <section class="centro">
+
+
+            <form action="form.php" id="form" class="remove" method="post">
+                <label>
+                    Primero, me gustaría actualizar el archivo dentro de mí que posee tu nombre. <br>
+                    Tipealo acá debajo...
+                    <input type="text" name="name" required>
+
+                </label>
+
+                <label>
+                    ... y tu apellido también. <br>
+                    <input type="text" name="last_name" required>
+
+                </label>
+
+                <label>
+                    El centro de datos me comunica sobre un animal de compañía, el primero que tuviste, pero perdí el archivo con su nombre...<br>
+
+                    <input type="text" name="pet" required>
+
+                </label>
+
+                <label>
+                    Si pudieras comer una comida sin cansarte... ¿cuál sería?<br>
+
+                    <input type="text" name="food" required>
+                </label>
+
+                <label>
+                    El centro me indica que también se ha perdido el archivo de los nombres de tus xadres.<br>
+                    <input type="text" name="parent" required>
+                </label>
+
+
+                <button type="submit" class="botonsubmit">Ya estoy listo para escuchar mi consejo.</button>
+
+            </form>
+
+
+        </section>
+    </main>
+
+    <script src="JS/_index.js"></script>
+
+</body>
+
+</html>
