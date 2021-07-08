@@ -30,20 +30,21 @@ if ($api_response !== false) {
 
 <body>
 
-    <main class="mainrandom">
+    <main class="centro mainrandom ">
 
 
         <section class="sectionrandom">
 
             <figure id="robotwizard">
-            <img src="https://i.pinimg.com/originals/7e/3d/85/7e3d85108c28a52299f1731213ae0d4f.png" alt="hola, amigue">
-            <figcaption>
-                <p id="suconsejo"> Tu consejo de hoy es: </p>
-            </figcaption>
-                        
+                <img src="https://i.pinimg.com/originals/7e/3d/85/7e3d85108c28a52299f1731213ae0d4f.png"
+                    alt="hola, amigue">
+                <figcaption>
+                    <p id="suconsejo"> Tu consejo de hoy es: </p>
+                </figcaption>
+
             </figure>
 
-                        <figure id="randomfig">
+            <figure id="randomfig" class="centro">
 
                 <img src="https://source.unsplash.com/random/600x300" alt="random image">
                 <figcaption>
@@ -62,11 +63,11 @@ if ($api_response !== false) {
 
 
 
-            
+
         </section>
-        
+
         <section class="sectionbotones">
-            
+
             <button id="consejo">Quiero otro consejo.</button>
             <button id="otro-consejo">Quiero otro <strong>tipo</strong> de consejo </button>
 

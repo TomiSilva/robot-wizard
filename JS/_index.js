@@ -23,7 +23,9 @@ function ocultar() {
     })
 
     button3.addEventListener('click', function(){
-        respuesta3.classList.toggle('active');
+        
+        preguntas.classList.toggle('centro');
+        preguntas.classList.add('remove');
         form.classList.add('active'); 
         form.classList.add('centro');
         

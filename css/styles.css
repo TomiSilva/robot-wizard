@@ -11,7 +11,10 @@
 
 header {
     margin: 20px;
+    
+    text-align: center;
 }
+
 
 body {
     background: linear-gradient(45deg, #FF79CD, #FFDF6B);
@@ -27,10 +30,11 @@ body {
 }
 .mainindex {
     position:relative;
-    background-color: rgb(255, 240, 218);
-    width: 300px;
-    height: 250px;
 
+    width: 62%;
+    height: 60%;
+    padding: 30px;
+    justify-content: normal;
 }
 .mainindex h2 {
     margin-bottom: 20px;;
@@ -43,11 +47,15 @@ body {
 .mainindex article p {
     margin-bottom: 50px;
 }
+#preguntas{
+    border-radius: 25px;
+    background-color: #fff0da;  
 
+}
 
 #preguntas button {
     position: absolute;
-    bottom: 20px;
+    bottom: 2%;
     left: 0;
     right: 0;
     margin: auto;
@@ -73,7 +81,7 @@ button:hover {
 }
 
 #form{
-    width: 500px;
+    border-radius: 35px  ; 
     background-color: #fff0da;
     text-align: center;
 }
@@ -104,22 +112,46 @@ img {
     justify-content: center;
 }
 
+@media (max-width: 600px){
+    
+    #form {
+        width: 69vw;
+        justify-content: normal;
+    }
+
+    input{
+        width: 45vw;
+        height: 7vh;
+        }
+    
+    .botonsubmit{
+        width: 78%;
+        font-size: 13px;
+        padding: 8px
+    }
+}
 
 /* random.php */
 
 .mainrandom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px;
+margin: 30px;
+
 }
+
 .sectionrandom {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+#robotwizard {
+    margin:30px;
+}
+#randomfig{
+    margin:30px;
+    
 }
 .mainrandom img {
-    height: 400px;
+    height: 30vw;
 }
 .mainrandom button {
     margin: 20px;
@@ -137,18 +169,22 @@ img {
 
 .sectionbotones {
     margin: auto;
-    padding: 20px;
+    
 }
 
 
-@media(max-width: 425px) {
+@media(max-width: 600px) {
+   
     .sectionrandom {
         flex-direction: column;
     }
 
     .sectionbotones{
         
-            margin: 30px;
+    display:flex;   
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     }
 
     #robotwizard{
