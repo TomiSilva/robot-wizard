@@ -30,13 +30,7 @@ function ocultar() {
         form.classList.add('centro');
         
 
-    })
-
-
-    
-
-
+    }) 
 
 }
-
 ocultar();

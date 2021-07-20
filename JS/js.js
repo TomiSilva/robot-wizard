@@ -23,6 +23,5 @@ function consejos() {
     })
 
 }
-
 consejos();
 
