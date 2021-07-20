@@ -1,19 +1,12 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 $api_response =file_get_contents('https://api.adviceslip.com/advice');
 
-
- 
 if ($api_response !== false) {
     $advice = json_decode( $api_response, true);
 }
- 
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +29,7 @@ if ($api_response !== false) {
         <section class="sectionrandom">
 
             <figure id="robotwizard">
+
                 <img src="https://i.pinimg.com/originals/7e/3d/85/7e3d85108c28a52299f1731213ae0d4f.png"
                     alt="hola, amigue">
                 <figcaption>
@@ -47,29 +41,26 @@ if ($api_response !== false) {
             <figure id="randomfig" class="centro">
 
                 <img src="https://source.unsplash.com/random/600x300" alt="random image">
+
                 <figcaption>
 
                     <?php 
-        foreach($advice['slip'] as $key => $value) {
-        if ($key === 'advice') {
-            echo '<p> "'. $value . '" </p>';
-        }
-        }
-        ?>
+                            foreach($advice['slip'] as $key => $value) {
+                            if ($key === 'advice') {
+                            echo '<p> "'. $value . '" </p>';
+                             }
+                         }
+                     ?>
 
                 </figcaption>
+
             </figure>
-
-
-
-
-
         </section>
 
         <section class="sectionbotones">
 
             <button id="consejo">Quiero otro consejo.</button>
-            <button id="otro-consejo">Quiero otro <strong>tipo</strong> de consejo </button>
+            <button id="otro-consejo">Quiero otro <strong>tipo</strong> de consejo.</button>
 
         </section>
 
